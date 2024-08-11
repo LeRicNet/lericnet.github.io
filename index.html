@@ -3,12 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>alyta</title>
-</head>
-<body>
 
-<div>
-    alyta is a virtual radiology assistant...
-</div>
+    <style>
+        @keyframes gradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col items-center justify-center h-screen">
+
+<img src="public/logo.svg" alt="Logo" class="w-[575px] mb-4">
+<h2 class="text-3xl text-white">User-Centered AI for Clinical Decision Support</h2>
 
 </body>
 </html>
